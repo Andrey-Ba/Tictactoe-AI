@@ -38,7 +38,7 @@ class minmaxttt: public minmaxutil<tictactoe, unsigned long> {
         }
 
         int utility(tictactoe state) override{
-            if(state.getwinner() == ai){return 1;}
+            if(state.getwinner() == ai){return 9 - (int)state.getmovenum();}
             if(state.getwinner() == xo::empty){return 0;}
             return -1;
         }

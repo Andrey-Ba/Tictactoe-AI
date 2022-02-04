@@ -31,6 +31,7 @@ class tictactoe{
         void checkifwon();
         bool isdone() const;
         const xo& getwinner() const;
+        const unsigned int& getmovenum() const {return move;}
         bool possiblemove(const unsigned long i) const;
 
         tictactoe& operator=(const tictactoe& other);
